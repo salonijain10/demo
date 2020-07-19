@@ -1,0 +1,182 @@
+<html>
+<head>
+    <style>
+        form{
+	border:3px solid;
+	}
+
+input[type=text],input[type=password]{
+	width:50%;
+	padding:12px 20px;
+	margin:8px 2px;
+	border:1px solid black;
+	box-sizing:border-box;
+	}
+
+button{
+	padding:14px 20px;
+	margin:8px 0;
+	border:none;
+	width:100px;
+	background-color:green;
+	font-size:25px;
+	color:white;
+	}
+
+p.deco{
+	color:white;
+	font-weight:bold;
+	font-size:30px;
+}
+
+.container{
+	padding:60px;
+	
+	}
+
+
+body{
+	background-color:linen;
+	background-image:url(book1.jpg)
+}
+
+.topnav {
+                  background-color: black;
+                  overflow: hidden;
+                }
+
+                /* Style the links inside the navigation bar */
+                .topnav a {
+                  float: left;
+                  color: white;
+                  text-align: center;
+                  padding: 20px 25px;
+                  text-decoration: none;
+                  font-size: 20px;
+                  margin-left: 190px;
+                }
+
+                /* Change the color of links on hover */
+                .topnav a:hover {
+                  background-color: black;
+                  color: white;
+                }
+
+                /* Add a color to the active/current link */
+                .topnav a.active {
+                  background-color: black;
+                  color: white;
+                }
+                .botnav
+                 {
+                  background-color: gray;
+                  overflow: hidden;
+                 }
+
+                /* Style the links inside the navigation bar */
+                .botnav a {
+                  float: left;
+                  color: white;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                  font-size: 25px;
+                  margin-left: 200px;
+                }
+
+                /* Change the color of links on hover */
+                .botnav a:hover {
+                  background-color: gray;
+                  color: white;
+                }
+
+                /* Add a color to the active/current link */
+                .botnav a.active {
+                  background-color: gray;
+                  color: white;
+                } 
+                .botnav input[type=text] {
+                        border: 1px solid #ccc;
+                        height: 40px;
+                        width : 300px;
+                        text-align: center;
+                        float: right;
+                        padding: 6px;
+                        border: none;
+                        margin-top: 8px;
+                        margin-right: 230px;
+                        margin-bottom: 10px;                        
+                        font-size: 17px;
+                }
+body
+{
+	background-color:whitesmoke;
+	color:black;
+}
+img
+{
+	width :100px;
+	height:100px;
+	border-radius: 50px;
+	
+}
+label.xyz
+{
+	font-size:20px;
+}
+        
+        
+    </style>
+</head>
+<body>
+	<header>
+
+<img src="logo.png" alt="Book" style = "float:left"; class="book"></img>
+
+		<!--top navigation bar-->
+		<div class="topnav">
+		<a class="active" href="website.php">Home</a>
+		<a href="contactus.php">Contactus</a>
+		<a href="feedback.php">feedback</a>
+		<a href = "login.php">login/Signin</a>
+		</div>
+		
+		<!-- botton navigation bar -->
+		<div class="botnav">
+		
+		<a href="sell.php">sell</a>
+		<a href = "rent.php">rent</a>
+                <input type="text" placeholder="Search..">
+		<!--<a href = "#weekly deals">weekly deals</a>
+		<a href = "#popular deals">popular deals</a> -->
+		</div>
+		
+</div>
+</header>
+	<form name="login" action="login_insert.php" onsubmit="return validation()" method="post">
+
+	
+	<center>
+	<div class="container">
+	<font size="5px">
+	<label for="name"><b>Username</b></label>
+	<input type="text" placeholder="Enter username" name="name" autofocus="autofocus" required></br>
+
+        </br>
+	
+	<label for="psw"><b>Password</b></label>
+	<input type="password" placeholder="Enter password" name="psw" autofocus="autofocus" required></br>
+
+	</br>
+
+	<button type="submit" name="Login">Login</button></br>
+	
+	</br>
+	</font>
+	</div>
+	<label>Do not have an account.Create one by <a href="register.html">   Sign Up </a></label><br>
+	<!--<label>Forgot<a href="f2.html">   password? </a></label>-->
+	</center>
+</form>
+</body>
+</html>

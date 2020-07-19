@@ -1,0 +1,109 @@
+<html>
+	<head>
+            <title> home page </title>
+            <style>
+                * 
+                {
+                    box-sizing:border-box
+                }
+                body
+                {
+                       background-color:whitesmoke;
+                }
+                .topnav {
+                  background-color: black;
+                  overflow: hidden;
+                }
+
+                /* Style the links inside the navigation bar */
+                .topnav a {
+                  float: left;
+                  color: white;
+                  text-align: center;
+                  padding: 20px 25px;
+                  text-decoration: none;
+                  font-size: 20px;
+                  margin-left: 190px;
+                }
+
+                /* Change the color of links on hover */
+                .topnav a:hover {
+                  background-color: black;
+                  color: white;
+                }
+
+                /* Add a color to the active/current link */
+                .topnav a.active {
+                  background-color: black;
+                  color: white;
+                }
+
+
+                
+                .botnav
+                 {
+                  background-color: gray;
+                  overflow: hidden;
+                 }
+
+                /* Style the links inside the navigation bar */
+                .botnav a {
+                  float: left;
+                  color: white;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                  font-size: 25px;
+                  margin-left: 200px;
+                }
+
+                /* Change the color of links on hover */
+                .botnav a:hover {
+                  background-color: gray;
+                  color: white;
+                }
+
+                /* Add a color to the active/current link */
+                .botnav a.active {
+                  background-color: gray;
+                  color: white;
+                } 
+                .botnav input[type=text] {
+                        border: 1px solid #ccc;
+                        height: 40px;
+                        width : 300px;
+                        text-align: center;
+                        float: right;
+                        padding: 6px;
+                        border: none;
+                        margin-top: 8px;
+                        margin-right: 230px;
+                        margin-bottom: 10px;                        
+                        font-size: 17px;
+                }
+                img.book
+{
+	width :100px;
+	height:100px;
+	border-radius: 50px;
+	
+}
+            </style>
+	</head>
+	<body>
+            <img src="logo.png" alt="Book" style = "float:left"; class="book"></img>
+            <!--top navigation bar-->
+            <div class="topnav">
+		<!--<a href="cart.php">cart</a>-->
+                <a href = "login.php">Login/Signin</a>
+		<a href="contactus.php">Contact us</a>
+		<a href="feedback.php">Feedback</a>		
+            </div>
+            <!-- botton navigation bar -->
+            <div class="botnav">		
+		<a href="sell.php">Sell</a>
+		<a href = "rent.php">Rent</a>
+                <input type="text" placeholder="Search..">
+            </div>
+	</body>
+</html>	
